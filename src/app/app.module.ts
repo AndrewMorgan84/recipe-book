@@ -1,4 +1,4 @@
-import { HeaderComponent } from './header/app.component';
+import { HeaderComponent } from './header/header/header.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -13,6 +13,7 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
     RecipesComponent,
     RecipesListComponent,
     RecipesDetailComponent,
@@ -21,8 +22,7 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
     ShoppingEditComponent
   ],
   imports: [
-    BrowserModule,
-    HeaderComponent
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
