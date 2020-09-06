@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './app-routing.module';
 import { RecipeService } from './recipes/recipe.service';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { HeaderComponent } from './header/header/header.component';
@@ -28,7 +29,8 @@ import { ShoppingListService } from './shopping-list/shopping-list.service';
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [
     RecipeService,
