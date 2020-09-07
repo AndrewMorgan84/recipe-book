@@ -1,3 +1,5 @@
+import { HttpClientModule } from '@angular/common/http'
+import { DataStorageService } from './shared/data-storage.service';
 import { AppRoutingModule } from './app-routing.module';
 import { RecipeService } from './recipes/recipe.service';
 import { DropdownDirective } from './shared/dropdown.directive';
@@ -31,6 +33,7 @@ import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component
     RecipeEditComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
@@ -38,7 +41,8 @@ import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component
   ],
   providers: [
     RecipeService,
-    ShoppingListService
+    ShoppingListService,
+    DataStorageService
   ],
   bootstrap: [AppComponent]
 })
