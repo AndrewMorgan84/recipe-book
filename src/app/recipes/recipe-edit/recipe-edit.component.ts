@@ -45,4 +45,8 @@ recipeForm: FormGroup;
     });
   }
 
+  onSubmit(){
+    console.log(this.recipeForm);
+  }
+
 }
